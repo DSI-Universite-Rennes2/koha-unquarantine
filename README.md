@@ -2,7 +2,7 @@
 
 ## English version
 
-This script 
+This script modifies items with a custom NotForLoan attribute to set it back to available after a definable time
 
 ### Usage
 ```bash
@@ -20,7 +20,7 @@ ARGUMENTS:
 
 ## Version française
 
-Ce script permet de remettre un statut NotForLoan disponible 
+Ce script modifie les exemplaires ayant un attribute NotForLOan personnalisé pour les rendre de nouveau disponible après un durée paramétrable
 
 ### Utilisation
 ```bash
