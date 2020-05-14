@@ -20,7 +20,9 @@ ARGUMENTS:
 
 ### Reporting security issues
 We take security seriously. If you discover a security issue, please bring it to their attention right away!
+
 Please **DO NOT** file a public issue, instead send your report privately to [foss-security@univ-rennes2.fr](mailto:foss-security@univ-rennes2.fr).
+
 Security reports are greatly appreciated and we will publicly thank you for it.
 
 ## Version française
@@ -43,5 +45,7 @@ ARGUMENTS:
 
 ### Signaler une vulnérabilité
 Nous prenons la sécurité au sérieux. Si vous découvrez une vulnérabilité, veuillez nous en informer au plus vite !
+
 S'il vous plait **NE PUBLIEZ PAS** un rapport de bug public. A la place, envoyez nous un rapport privé à [foss-security@univ-rennes2.fr](mailto:foss-security@univ-rennes2.fr).
+
 Les rapports de sécurité sont grandement appréciés et nous vous en remercierons publiquement.
