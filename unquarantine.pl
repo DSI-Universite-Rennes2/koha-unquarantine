@@ -12,9 +12,7 @@ if ( !defined $quarantinecode || $quarantinecode !~ /^\-?\d+$/ || $quarantinetim
 
 # Importing Koha package only after testing arguments to faster usage display
 eval {
-    require C4::Items;
     require Koha::Items;
-    C4::Items->import();
     Koha::Items->import();
 };
 if ($@) {
@@ -33,7 +31,5 @@ my %conditions = (
 my $items = Koha::Items->search( \%conditions );
 # Modify selected items to put them back the available NotForLoan status
 while ( my $i = $items->next ) {
-    my $item = GetItem( $i->itemnumber );
-    $item->{'notforloan'} = 0;
-    ModItem( $item, undef, $i->itemnumber);
+    $i->notforloan(0)->store;
 }
