@@ -6,11 +6,12 @@ This script modifies items with a custom NotForLoan attribute to set it back to 
 
 ### Usage
 ```bash
-perl unquarantine.pl [qc] [qd]
+perl unquarantine.pl [qc] [qd] [qb]
 
 ARGUMENTS:
   qc	Code of the quarantine status, must be a possible value of items.notforloan (integer)
   qd	Duration of the quarantine in days (positive integer, 10 by default)
+  qb	Code for a specific holding branch (optional), leave empty if all branches are targeted
 ```
 
 ### Setup
@@ -31,11 +32,12 @@ Ce script modifie les exemplaires ayant un attribute NotForLOan personnalisé po
 
 ### Utilisation
 ```bash
-perl unquarantine.pl [qc] [qd]
+perl unquarantine.pl [qc] [qd] [qb]
 
 ARGUMENTS:
   qc	Code du statut de quarantaine, doit être une valeur possible de items.notforloan (entier)
   qd	Durée de la quarantaine en jours (entier positif, 10 par défaut)
+  qb Code pour une bibliothèque spécifique (holdingbranch), laisser vide si vous souhaitez impacter les exemplaires de toutes les bibliothèques
 ```
 
 ### Installation
